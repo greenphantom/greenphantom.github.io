@@ -2,6 +2,7 @@ body, html{ height: 100%;}
 body {
 	padding-top: 50px;
 	background-color: #226d3b;
+	background: url("img/BG.jpg");
 }
 
 #home {
@@ -29,10 +30,10 @@ h1, h2, h3, h4, h5, h6{
 	color: gold;
 	font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
 }
-p{
+p, address{
 	color: #c0c0c0;
 	font-size: 12pt;
-	font-family: "Times New Roman", Times, serif;
+	font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
 }
 .badge {
 	color: gold;
@@ -42,4 +43,39 @@ p{
 }
 .list-group{
 	color: #018e30;
+}
+a:link {
+    color: green;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: gold;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}.button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
 }
