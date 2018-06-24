@@ -12,6 +12,5 @@ if (isset($_POST['submit'])){
     $txt = $name." has sent you a message from your website!\nTheir phone number is: ".$phone.".\n\n".$message;
     
     mail($mailTo,$subject,$txt,$headers);
-    header("Location: index.html?mailsend");
 }
 ?>
