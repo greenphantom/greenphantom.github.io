@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="a portfolio site for me based off the tutorial lol">
+    <meta name="description" content="Portfolio site for Daniel Tymecki | Aspiring Software Developer and Entrepreneur">
     <meta name="author" content="Daniel Tymecki">
     <title>Daniel Tymecki - Software Developer and Entrepreneur</title>
 
@@ -19,20 +19,6 @@
     <script src="script.js" type="text/javascript"></script>
     <!-- our CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- our PHP -->
-    <link rel="php" href="contactform.php">  
-	
-	 <!-- Google verification 
-      {% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
-
-      <!-- Bing Verification 
-      {% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
--->
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
@@ -61,15 +47,14 @@
         </div>
     </div>
 	
-	<div id="about" class="about-section">
+	<div id="about" class="container">
+        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 		<div class="page-header">
 			<h1>About me...</h1>
+            <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="daniel-tymecki-799711127"><a class="LI-simple-link" href='https://www.linkedin.com/in/daniel-tymecki-799711127?trk=profile-badge'>Daniel Tymecki</a></div>
 		</div>
 		<p>
-		Yo my name is Daniel Tymecki and I like to program.<br>
-		I'm still a bit of a novice right now, but I have big goals!<br>
-		So far I have learned Python, C++, and am currently learning HTML and Java.<br>
-		If you have any suggestions, please contact me for I am eager to improve.<br>
+		An aspiring software engineer / entrepreneur looking to gain the knowledge I need to ensure a successful future.
         </p>
 	</div>
 	
@@ -120,15 +105,15 @@
       </div>
     </div>
 
-<div id="contact" class="contact-section"> 
+<div id="contact" class="container"> 
     <div class="wrapper">
         <div class="content">
             <h1>Contact Me</h1>
             <div class="fields">
-                <form name="contact-form" action="contactform.php" method="post">
+                <form name="contact-form" action="https://formspree.io/daniel.tymecki@gmail.com" method="post">
                 <input type="text" class="input" name="name" required="required" placeholder="Enter your name here">
-                <input type="text" class="input" name="email" required="required" placeholder="Email">
-                <input type="text" class="input" name="phone" required="required" placeholder="Phone">
+                <input type="email" class="input" name="email" required="required" placeholder="Email">
+                <input type="tel" class="input" name="phone" required="required" placeholder="Phone">
                 <input type="text" class="input" name="subject" placeholder="Subject">
                 <div class="msg">
                     <textarea name="message" required="required" placeholder="Message"></textarea>
@@ -137,6 +122,9 @@
                 </form>
             </div>
         </div>
+    </div>
+    <div class="media-links">
+        <a href="https://www.linkedin.com/in/daniel-tymecki-799711127/" target="_blank" class="li-link"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-128.png" class="li-img"></a>
     </div>
 </div>
       <img src="img/Script_name.PNG">
