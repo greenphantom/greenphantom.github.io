@@ -348,8 +348,9 @@ opening-container {
     color: #fff;
     cursor: pointer;
     text-transform: uppercase;
-    width: 100%
+    width: 100%;
 }
+
 .LI-profile-badge {
     padding-left: auto;
     padding-right: auto;
@@ -357,6 +358,100 @@ opening-container {
 }
 
 .bottom {
-    padding-top: 2.5em;
+    top: 2.5em;
     display: inline-block;
+}
+
+.holder{
+    padding-top: 15px;
+}
+
+.footer{
+    background-color: var(--light_primary_opa);
+}
+
+.foot-ul li{
+    display: inline-block;
+    position: relative;
+    padding-right: 1.2em;
+    text-align: center;
+    text-decoration-color: 
+}
+
+.foot-ul a{
+    color: var(--primary_text);
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.foot-ul a:hover{
+    color: var(--dark_primary);
+}
+
+.li-logo{
+    height: 45px;
+    width: 45px;
+}
+
+.icon {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.link {
+    
+}
+
+/**
+ * The "shine" element
+ */
+
+.icon:after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+  
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+/* Hover state - trigger effect */
+
+.icon:hover:after {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+
+/* Active state */
+
+.icon:active:after {
+  opacity: 0;
+}
+
+.link {
+    color: var(--primary_text);
+    text-decoration: underline;
+}
+
+.link:hover{
+    color: var(--accent);
 }
