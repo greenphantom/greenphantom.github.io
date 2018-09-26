@@ -20,6 +20,7 @@
 body, html {
     height: 100%;
     background-color: var(--background);
+    background-size: cover;
 }
 
 body {
@@ -254,6 +255,8 @@ nav ul li a:hover::before {
 .container {
     margin-left: auto;
     margin-right: auto;
+    background-color: white;
+    background-size: cover;
 }
 
 .landing-title {
@@ -349,12 +352,6 @@ opening-container {
     cursor: pointer;
     text-transform: uppercase;
     width: 100%;
-}
-
-.LI-profile-badge {
-    padding-left: auto;
-    padding-right: auto;
-    text-align: center;
 }
 
 .bottom {
